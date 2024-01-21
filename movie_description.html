@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movie Description</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/movie_description.css">
+	<link rel="icon" href="./assets/image/ar48px.png" type="x-icon">
+	<link rel="shortcut-icon" href="./assets/image/ar48px.png" type="x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@100;300;900;700&display=swap" rel="stylesheet">
+	<!-- v Get CDN Font-Awesome v -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="container-fluid sticky-top px-3" style="background-color: var(--dark-grey);">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand mx-3 " href="index.html">
+					<img src="./assets/image/areview-header.png">
+				</a>
+
+				<!--  -->
+				<button 
+					id="category_button"
+					class="navbar-toggler" 
+					type="button"
+					data-bs-toggle="collapse" 
+					data-bs-target="#navbarSupportedContent" 
+					aria-controls="navbarSupportedContent" 
+					aria-expanded="false" 
+					aria-label="Toggle navigation">
+					<span id="category_button_icon" class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+						<li class="nav-item  px-4">
+							<a class="nav-link text-white gras text-uppercase" href="movies.html">
+								cinéma
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="series.html">
+								séries
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="video_game.html">
+								gaming
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="music.html">
+								musique
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="book.html">
+								livre
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="evenement.html">
+								événements
+							</a>
+						</li>
+					</ul>
+
+					<!-- search button -->
+					<form class="d-flex" role="search" id="search">
+						<input class="form-control me-2 thin" 
+							type="search" 
+							placeholder="Rechercher" 
+							aria-label="Search">
+						<a class="btn" href="news_feed.html" role="button"> 
+							<i class="fa-solid fa-magnifying-glass" style="height: 25px;width: 25px;"></i>
+						</a>
+					</form>
+
+					<!-- user button -->
+					<div id="user">
+						<i class="fa-solid fa-user" 
+							style="height: 25px; width: 25px;" 
+							type="button" 
+							data-bs-toggle="offcanvas" 
+							data-bs-target="#offcanvasWithBothOptions" 
+							aria-controls="offcanvasWithBothOptions" >
+						</i>
+					</div>
+
+				</div>
+			</nav>
+				<div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header ">
+					<h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+					</div>
+					<div class="offcanvas-body">
+						<div class="input-group my-1" id="Pseudo">
+						<span class="input-group-text " id="logo_pseudo">
+							<i class="fa-solid fa-user"></i>
+						</span>
+							<div class="col-sm ">
+							<input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login" aria-describedby="addon-wrapping">
+							</div>
+						</div>
+					<div class="input-group my-1" id="password">
+						<span class="input-group-text " id="logo_cadenas">
+						<i class="fa-solid fa-lock"></i>
+						</span>
+						<div class="col-sm ">
+							<input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login" aria-describedby="addon-wrapping">
+						</div>
+					</div>
+					<div class="row my-1" >
+						<div class="form-check ms-2 text-start">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+							Se souvenir de moi
+							</label>
+						</div>              
+					</div>
+					<div class="row my-1 text-center">
+						<a href=""> Mot de passe oublié ?</a>
+					</div>
+					<div class="row mt-3 text-center">
+						<a href="account.html">
+							<button  class="btn" type="submit" id="bouton_orange"> Se connecter </button>
+						</a>
+					</div>
+					<div class="row my-1 text-center"> 
+						<p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+						<a href="login.html">
+							<button  class="btn" type="submit" id="bouton_orange">  S'inscrire </button>
+						</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Website content -->
+	<main class="px-80 py-40">
+
+		<!-- Movie Title & quick description -->
+		<section id="titre_film" class="px-48">
+			<h1 class="gras text_blue">The Thing</h1>
+			<p class="bold"> 1h49 - Horreur, Mystère, Science-Fiction </p>
+		</section>
+
+		<!-- Movie informations navigation tabs -->
+		<ul class="nav nav-tabs nav-justified link_dark_grey">
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Résumé</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="#">Casting</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="#">Bandes-Annonces</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="#">Spectateurs</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="#">Presse</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="#">Dstribution</a>
+			</li>
+		</ul>
+
+		<!-- The main frame chunk -->
+		<div class="main_frame">
+
+			<!-- Image & Trailer chunk -->
+			<section id="image_BA" class="px-48 py-48">
+				<div>
+					<img src="https://placehold.co/445x700" width="100%">
+				</div>
+				<div>
+					<img src="https://placehold.co/1154x700" width="100%" class="pl-48">
+				</div>
+			</section>
+
+			<!-- Infos chunk -->
+			<div class="px-48">
+				<hr/>
+				<div class="px-232 py-48">
+
+					<!-- Note & Star chunk -->
+					<section id="note">
+						<div id="star">
+							<a class="bold" href="#notreavis">
+								<i class="fa-solid fa-star"></i>
+								<h1 class="bold text_blue">5 / 5</h1>
+							</a>
+						</div>
+					</section>
+					<hr/>
+
+					<section id="synopsis">
+						<h4 class="bold text_blue">Synopsis :</h4>
+						<p>
+							Une équipe de chercheurs en Antarctique est chasée par 
+							une étrange créature capable d'imiter ses victimes. 
+							Mais qui peut bien être "la chose" ?
+						</p>
+					</section>
+					<hr/>
+
+					<section id="notreavis">
+						<h4 class="bold text_blue">Notre Avis :</h4>
+						<p>
+							Un huis clos dans une base scientifique perdue au milieu 
+							de l'antarctique, John Carpenter nous montre une fois de plus, 
+							dans ce slasher unique en son genre, qu'il est le maître 
+							incontesté de l'horreur. Des effets spéciaux qui n'ont pas 
+							viellit, un minimalisme dont le maître nous a habitué, 
+							des acteurs époustouflants et un suspence insoutenable vous 
+							attendront dans "The Thing", le chef-d'œuvre de John Carpenter.
+						</p>
+					</section>
+					<hr/>
+
+					<section id="infosup">
+						<!-- The short infos & casting table -->
+						<h4 class="bold text_blue">Informations supplémentaires :</h4>
+						<table class="table table-sm table-striped table-hover">
+							<thread>
+								<tr>
+									<th scope="row">Année</th>
+									<th>1982</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Réalisation</th>
+									<th>John Carpenter</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Scénario</th>
+									<th>Bill Lancaster, John W. Campbell Jr.</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Acteurs</th>
+									<th>
+										Kurt Russel, Keith David, Wilford Brimley, Richard Masur, 
+										T.K. Carter, David Clennon, Richard Dysart, Charles Hallahan, 
+										Peter Maloney, Donald Moffat, Joel Polis, Thomas G. Waites, 
+										Norbert Weisser, Larry Franco, Nate Irwin, William Zeman, 
+										Adrienne Barbeau, John Carpenter
+									</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Musique</th>
+									<th>Ennio Moriconne</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Production</th>
+									<th>
+										Stuart Cohen, David Foster, Larry Franco, 
+										Wilbur Stark, Lawrence Turman
+									</th>
+								</tr>
+							</thread>
+						</table>
+					</section>
+				</div>
+				<hr/>
+
+				<!-- The Comments chunk -->
+				<section id="commentaires" class="pb-40">
+					<h4 class="bold text_blue">Commentaires :</h4>
+					<form>
+						<input type="text" 
+							id="enterComment" 
+							name="enterComment" 
+							placeholder="Entrez un commentaire ..."
+							spellcheck="true"
+							class="comment_frame"/>
+					</form>
+					<hr/>
+					<!-- Comment -->
+					<div id="comment" class="comment_frame gap-4 pt-40">
+						<div id="comment_profile_field">
+							<img src="https://placehold.co/45x45/000000/FFFFFF" alt="profile picture" id="profile_picture">
+							<p> H.P. Lovecraft </p>
+						</div>
+						<div class="vl"></div>
+						<div class="text_wrap">
+							Super !
+						</div>
+					</div>
+					<hr/>
+					<div id="comment" class="comment_frame gap-4 pt-40">
+						<div id="comment_profile_field">
+							<img src="https://placehold.co/45x45/000000/FFFFFF" alt="profile picture" id="profile_picture">
+							<p> Howard Hawks </p>
+						</div>
+						<div class="vl"></div>
+						<div class="text_wrap">
+							rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro 
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+		</div>
+	</main>
+
+
+	<!-- The Footer -->
+	<footer class="bg_grey">
+
+		<!-- Link Icons -->
+		<div class="text-center py-40">
+			<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank" rel="noopener noreferrer" class="d-inline"><img src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
+			<a href="" class="d-inline"><img src="./assets/image/contact/INSTAGRAM.png" alt="instagram" width="42px" height="42px"></a>
+			<a href="" class="d-inline"><img src="./assets/image/contact/FACEBOOK.png" alt="facebook" width="42px" height="42px"></a>
+			<a href="" class="d-inline"><img src="./assets/image/contact/MARKETPLACE.png" alt="marketplace" width="42px" height="42px"></a>
+			<a href="" class="d-inline"><img src="./assets/image/contact/PINTEREST.png" alt="pinterest" width="42px" height="42px"></a>
+			<a href="" class="d-inline"><img src="./assets/image/contact/TWITTER.png" alt="twitter" width="42px" height="42px"></a>
+		</div>
+
+		<div class="text-center pb-40">
+			<div class="text-white text-uppercase link_white">
+				<a href=""><p class="d-inline px-3">newsletter</p></a>
+				<a href="contact.html"><p class="d-inline px-3">contact</p></a>
+				<a href=""><p class="d-inline px-3">modération</p></a>
+				<a href=""><p class="d-inline px-3">mention légale</p></a>
+				<a href=""><p class="d-inline px-3">c.g.u cookies</p></a>
+				<a href=""><p class="d-inline px-3">politique de confidentialité</p></a>
+			</div>
+		</div>
+
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</body>
+</html>

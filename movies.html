@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ACGD Review Cinéma</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/movie.css">
+  <link rel="icon" href="./assets/image/ar48px.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- TOUJOURS METTRE REL= et HREF=-->
+
+</head>
+
+<body>
+
+  <!--<header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./assets/image/areview.png" alt="logo" width="200px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 center">
+            <li class="nav-item"></li>
+            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="movies.html">Cinéma</a>
+            </li>
+            <li class="nav-item"></li>
+            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="series.html">Séries</a>
+            </li>
+            <li class="nav-item"></li>
+            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="video_game.html">Gaming</a>
+            </li>
+            <li class="nav-item"></li>
+            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="music.html">Musiques</a>
+            </li>
+            <li class="nav-item"></li>
+            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="book.html">Livres</a>
+            </li>
+            <li class="nav-item"></li>
+            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="events.html">Évenements</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit"><img src="./assets/image/loupe.png" alt="loupe"></button>
+          </form>
+          <a class="nav-item p-2" href="login.html"><img src="assets/image/account.svg" alt="account logo" width="26px"
+              height="26px"></a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+  </header> -->
+  <header class="container-fluid sticky-top px-3 bg_grey">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand mx-3 " href="index.html"> <img src="./assets/image/areview-header.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-auto">
+            <li class="nav-item  px-4">
+              <a class="nav-link text-white gras text-uppercase" href="movies.html">
+                cinéma
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="series.html">
+                séries
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="video_game.html">
+                gaming
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="music.html">
+                musique
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="book.html">
+                livre
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="evenement.html">
+                événements
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" id="search">
+            <input class="form-control me-2 thin" type="search" placeholder="Search" aria-label="Search">
+            <a class="btn" href="news_feed.html" role="button"> <i class="fa-solid fa-magnifying-glass"
+                style="height: 25px;width: 25px;"></i></a>
+          </form>
+          <div id="user">
+            <i class="fa-solid fa-user" style="height: 25px; width: 25px;" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header ">
+          <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="input-group my-1" id="Pseudo">
+            <span class="input-group-text " id="logo_pseudo">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <div class="col-sm ">
+              <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
+                aria-describedby="addon-wrapping">
+            </div>
+          </div>
+          <div class="input-group my-1" id="password">
+            <span class="input-group-text " id="logo_cadenas">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            <div class="col-sm ">
+              <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
+                aria-describedby="addon-wrapping">
+            </div>
+          </div>
+          <div class="row my-1">
+            <div class="form-check ms-2 text-start">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Se souvenir de moi
+              </label>
+            </div>
+          </div>
+          <div class="row my-1 text-center">
+            <a href=""> Mot de passe oublié ?</a>
+          </div>
+          <div class="row mt-3 text-center">
+            <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button> </a>
+          </div>
+          <div class="row my-1 text-center">
+            <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+            <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!-- banner -->
+  </header>
+
+  <!--IL VAUT MIEUX DEVELOPPER LES SLIDES SOUS JS-->
+
+  <!-- Carousel de slides -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+        aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/image/movie_theatre/Slide/banniere_movie.jpg" class="d-block w-100" alt="movie"
+          height="350px">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/image/movie_theatre/Slide/banniere_serie.jpg" class="d-block w-100" alt="serie"
+          height="350 px">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/image/movie_theatre/Slide/banniere_gaming.png" class="d-block w-100" alt="Gaming"
+          height="350px">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/image/movie_theatre/Slide/banniere_music.avif" class="d-block w-100" alt="music"
+          height="350px">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/image/movie_theatre/Slide/banniere_livre.avif" class="d-block w-100" alt="livre"
+          height="350px">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/image/movie_theatre/Slide/banniere_event.jpg" class="d-block w-100" alt="events"
+          height="350px">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid col-12">
+    <p class="h1 bold ">LA PAGE DES CINÉPHILES </p>
+  </div>
+  <div class="container-fluid">
+    <p class="h2 bold"> Bandes-annonces à ne pas manquer</p>
+    <figure class="d-flex justify-content-between">
+      <img src="./assets/image/movie_description/" class="justify-content-around" alt="black_widow"
+        height="230px">
+      <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="justify-content-around" alt="antman"
+        height="230px">
+      <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="justify-content-around" alt="antman2"
+        height="230px">
+      <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="justify-content-around" alt="avengers"
+        height="230px">
+      <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="justify-content-around" alt="avengers2"
+        height="230px">
+      <img src="./assets/image/movie_theatre/Movies/Avenger3.jpg" class="justify-content-around" alt="avengers3"
+        height="230px">
+      <img src="./assets/image/movie_theatre/Movies/black_widow.jpg" class="justify-content-around" alt="black_widow"
+        height="230px">
+
+      <figcaption class="d-flex align-content-center">
+        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
+        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
+        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
+        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
+        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
+        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
+        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
+      </figcaption>
+
+    </figure>
+  </div>
+  <hr>
+  </hr>
+
+
+  <div>
+    <p class="h2"> Actuellement en salles</p>
+
+    <div class="black hashtag text-center text-uppercase gras" style="font-size: 20px;">
+
+      <p class="d-inline px-3"><span style="color:#F4661B">#</span> Films Marvel</p>
+
+
+      <p class="d-inline px-3"><span style="color:#F4661B;">#</span>Agenda des sorties</p>
+
+
+      <p class="d-inline px-3"><span style="color:#F4661B;">#</span>Sorties ciné du mois</p>
+
+      <p class="d-inline px-3"><span style="color:#F4661B;">#</span>Actus cinéma</p>
+
+      <p class="d-inline px-3"><span style="color:#F4661B;">#</span>Box Office</p>
+
+    </div>
+
+    <!-- Terminer bloc recherche de salle, .... -->
+    <div class="pt-100 px-14">
+      <div class="input-group mb-3 align-content-md-center">
+        <input type="text" class="form-control light " placeholder="Rechercher une salle : Dax, CGR, 64100,..."
+          aria-label="name" aria-describedby="basic-addon1">
+        <input type="text" class="form-control" placeholder="Connectez vous pour enregistrer vos films favoris">
+      </div>
+    </div>
+
+    <div class="black hashtag text-start gras" style="font-size: 14px;">
+      <div class="d-flex flex-row">
+        <p class="d-inline px-3 uppercase">SORTIE DE LA SEMAINE</p>
+        <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px"></div>
+        <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px"></div>
+        <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px"></div>
+        <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px"></div>
+
+        <!-- mettre un espace entre ces 2 blocs -->
+
+        <div class="d-flex flex-row-reverse ">
+          <p class="d-inline px-3 uppercase">TOUJOURS À L'AFFICHE</p>
+          <div class="p-2 "><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px"></div>
+          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px"></div>
+          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px"></div>
+          <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
+          </div>
+        </div>
+      </div>
+      <div class="black hashtag text-start gras" style="font-size: 14px;">
+        <div class="d-flex flex-row">
+          <p class="d-inline px-3 uppercase">prochainement</p>
+          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px"></div>
+          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px"></div>
+          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px"></div>
+          <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
+          </div>
+
+          <!-- mettre un espace entre ces 2 blocs -->
+
+          <div class="d-flex flex-row-reverse ">
+            <p class="d-inline px-3 uppercase">LES PLUS ATTENDUS PAR LES FANS</p>
+            <div class="p-2 "><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div>
+        <p class="h2"> DVD & BLU-RAY</p>
+        <div class="black hashtag text-start gras" style="font-size: 14px;">
+          <div class="d-flex flex-row"">
+            <p class=" d-inline px-3 uppercase"> LES SORTIES DU MOMENT</p>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
+            </div>
+            <div class="d-flex flex-row-reverse ">
+              <p class="d-inline px-3 uppercase">POUR LES ENFANTS</p>
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <p class="h2"> VOD</p>
+        <div class="black hashtag text-start gras" style="font-size: 14px;">
+          <div class="d-flex justify-content-center">
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="h2"> STREAMING</p>
+        <div class="black hashtag text-start gras" style="font-size: 14px;">
+          <div class="d-flex justify-content-between">
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
+            </div>
+            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--Footer -->
+      <footer class="bg_grey">
+
+        <!-- Link Icons -->
+        <div class="text-center py-40">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="d-inline"><img
+              src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
+          <a href="#" class="d-inline"><img src="./assets/image/contact/INSTAGRAM.png" alt="instagram" width="42px"
+              height="42px"></a>
+          <a href="#" class="d-inline"><img src="./assets/image/contact/FACEBOOK.png" alt="facebook" width="42px"
+              height="42px"></a>
+          <a href="#" class="d-inline"><img src="./assets/image/contact/MARKETPLACE.png" alt="marketplace" width="42px"
+              height="42px"></a>
+          <a href="#" class="d-inline"><img src="./assets/image/contact/PINTEREST.png" alt="pinterest" width="42px"
+              height="42px"></a>
+          <a href="#" class="d-inline"><img src="./assets/image/contact/TWITTER.png" alt="twitter" width="42px"
+              height="42px"></a>
+        </div>
+
+        <div class="text-center pb-40">
+          <div class="text-white text-uppercase link">
+            <a href="#">
+              <p class="d-inline px-3">newsletter</p>
+            </a>
+            <a href="contact.html">
+              <p class="d-inline px-3">contact</p>
+            </a>
+            <a href="#">
+              <p class="d-inline px-3">modération</p>
+            </a>
+            <a href="#">
+              <p class="d-inline px-3">mention légale</p>
+            </a>
+            <a href="#">
+              <p class="d-inline px-3">c.g.u cookies</p>
+            </a>
+            <a href="#">
+              <p class="d-inline px-3">politique de confidentialité</p>
+            </a>
+          </div>
+        </div>
+
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+:root {
+    --orange: #F4661B;
+    --white: #D9D9D9;
+    --grey: #434343;
+    --blue: #1BB5B0;
+    --police: "noto sans" sans-serif;
+}
+#search svg {
+    color: var(--orange);
+}
+
+.header {
+    background-color: var(--grey);
+}
+
+.menu {
+    color: var(--white);
+    font-family: var(--police);
+    font-weight: 700;
+}
+/*h1{
+    top: calc(305 px- 50%);
+}*/
+h1 {
+    color: var(--white);
+    font-family: var(--police);
+    font-weight: 700;
+}
+h2 {
+    color: var(--orange);
+    font-family: var(--police);
+    font-weight: 700;
+}
+h3{
+    color: var(--white);
+    background-color: var(--grey);
+    font-family: var(--police);
+    font-weight: 700;
+}
+
+.titre {
+    color: var(--orange);
+    font-size: 17 px;
+    padding-bottom: 20 px;
+  }
+
+.slogan {
+    padding-top:300 px ;
+}
+
