@@ -6,6 +6,15 @@
     color: var(--orange);
 }
 
+li img {
+    width: 100%;
+    
+} 
+
+#box-shadow {
+    -webkit-box-shadow: 8px 6px 7px -1px #000000; 
+    box-shadow: 8px 6px 7px -1px #000000;
+    }
 .header {
     background-color: #434343;
 }
@@ -50,23 +59,27 @@
     font-size: 60px;
     text-align: center;
     color: #F4661B;
-
+  
 }
 
 .h2 {
     font-family: 'noto sans', sans-serif;
     font-size: 40px;
     text-align: center;
-    color: white;
+    text-transform: uppercase;
+    color: white ;
     background-color: #434343;
 }
 
 .h3 {
     font-family: 'noto sans', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: #F4661B;
+    font-size: 14px;
+    text-align:center;
+    color: #000000;
+    font-style: bold;
 }
+
+
 
 .text-center {
     margin: 25px;

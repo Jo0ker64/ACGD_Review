@@ -12,53 +12,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
   <!-- TOUJOURS METTRE REL= et HREF=-->
 
 </head>
 
 <body>
-
-  <!--<header class="header">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="./assets/image/areview.png" alt="logo" width="200px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 center">
-            <li class="nav-item"></li>
-            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="movies.html">Cinéma</a>
-            </li>
-            <li class="nav-item"></li>
-            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="series.html">Séries</a>
-            </li>
-            <li class="nav-item"></li>
-            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="video_game.html">Gaming</a>
-            </li>
-            <li class="nav-item"></li>
-            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="music.html">Musiques</a>
-            </li>
-            <li class="nav-item"></li>
-            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="book.html">Livres</a>
-            </li>
-            <li class="nav-item"></li>
-            <a class="nav-link text-white pe-5 gras text-uppercase text-center" href="events.html">Évenements</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-            <button class="btn" type="submit"><img src="./assets/image/loupe.png" alt="loupe"></button>
-          </form>
-          <a class="nav-item p-2" href="login.html"><img src="assets/image/account.svg" alt="account logo" width="26px"
-              height="26px"></a>
-          </button>
-        </div>
-      </div>
-    </nav>
-
-  </header> -->
+  <!-- Barre de navigation en tête de page -->
   <header class="container-fluid sticky-top px-3 bg_grey">
     <div class="row">
       <nav class="navbar navbar-expand-lg">
@@ -157,301 +117,411 @@
         </div>
       </div>
     </div>
-
     </div>
-    <!-- banner -->
   </header>
+  <!-- fin de la barre de navigation  -->
 
-  <!--IL VAUT MIEUX DEVELOPPER LES SLIDES SOUS JS-->
-
-  <!-- Carousel de slides -->
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-        aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-        aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-        aria-label="Slide 6"></button>
+  <!-- carroussel de slide developper en js -->
+  <section class="splide" aria-labelledby="carousel-heading">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="./assets/image/movie_theatre/Slide/1.jpg"></li>
+        <li class="splide__slide"><img src="./assets/image/movie_theatre/Slide/2.jpg"></li>
+        <li class="splide__slide"><img src="./assets/image/movie_theatre/Slide/88869.png"></li>
+        <li class="splide__slide"><img src="./assets/image/movie_theatre/Slide/Avengers 2 Banner.jpg"> </li>
+        <li class="splide__slide"><img src="./assets/image/movie_theatre/Slide/banniere_movie.jpg"></li>
+        <li class="splide__slide"><img src="./assets/image/movie_theatre/Slide/batverse.png"></li>
+        <li class="splide__slide"><img
+            src="./assets/image/movie_theatre/Slide/harley-quinn-birds-of-prey-une-scenariste-pour-le-spin-off-suicide-squad-une.jpg">
+        </li>
+        <li class="splide__slide"><img src="./assets/image/movie_theatre/Slide/joker-bannière.webp"></li>
+      </ul>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/image/movie_theatre/Slide/banniere_movie.jpg" class="d-block w-100" alt="movie"
-          height="350px">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/image/movie_theatre/Slide/banniere_serie.jpg" class="d-block w-100" alt="serie"
-          height="350 px">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/image/movie_theatre/Slide/banniere_gaming.png" class="d-block w-100" alt="Gaming"
-          height="350px">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/image/movie_theatre/Slide/banniere_music.avif" class="d-block w-100" alt="music"
-          height="350px">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/image/movie_theatre/Slide/banniere_livre.avif" class="d-block w-100" alt="livre"
-          height="350px">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/image/movie_theatre/Slide/banniere_event.jpg" class="d-block w-100" alt="events"
-          height="350px">
-      </div>
+    <script src="./assets/js/main.js"></script>
+  </section>
+  <!-- fin du carroussel -->
+
+  <!-- corps de la page -->
+  <section>
+    <div>
+      <p class="h1 uppercase gras">LA PAGE DES CINÉPHILES </p>
     </div>
-  </div>
+  </section>
+  <section>
+    <div class="fluid-container">
+      <div>
+        <p class="h2 bold">les bandes annonces à ne pas manquer</p>
+      </div>
 
 
-
-
-  <div class="container-fluid col-12">
-    <p class="h1 bold ">LA PAGE DES CINÉPHILES </p>
-  </div>
-  <div class="container-fluid">
-    <p class="h2 bold"> Bandes-annonces à ne pas manquer</p>
-    <figure class="d-flex justify-content-between">
-      <a href="./movie_description.html"></a> <img src="./assets/image/movie_description/"
-        class="justify-content-around" alt="black_widow" height="230px">
-      <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="justify-content-around" alt="antman"
-        height="230px">
-      <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="justify-content-around" alt="antman2"
-        height="230px">
-      <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="justify-content-around" alt="avengers"
-        height="230px">
-      <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="justify-content-around" alt="avengers2"
-        height="230px">
-      <img src="./assets/image/movie_theatre/Movies/Avenger3.jpg" class="justify-content-around" alt="avengers3"
-        height="230px">
-      <img src="./assets/image/movie_theatre/Movies/black_widow.jpg" class="justify-content-around" alt="black_widow"
-        height="230px">
-
-      <figcaption class="d-flex align-content-center">
-        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
-        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
-        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
-        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
-        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
-        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
-        <img src="assets/image/play.jpg" class="align-items-center" alt="play" width="35px" height="35px">
-      </figcaption>
-
-    </figure>
-  </div>
-  <hr>
-  </hr>
-
-
-  <div>
-    <p class="h2"> Actuellement en salles</p>
-    <div class="black hashtag text-center text-uppercase gras" style="font-size: 20px;">
-      <p class="d-inline px-3"><span style="color:#F4661B">#</span> Films Marvel</p>
-      <p class="d-inline px-3"><span style="color:#F4661B;">#</span>Agenda des sorties</p>
-      <p class="d-inline px-3"><span style="color:#F4661B;">#</span>Sorties ciné du mois</p>
-      <p class="d-inline px-3"><span style="color:#F4661B;">#</span>Actus cinéma</p>
-      <p class="d-inline px-3"><span style="color:#F4661B;">#</span>Box Office</p>
-    </div>
-
-    <!-- Terminer bloc recherche de salle, .... -->
-    <div class="pt-100 px-14">
-      <div class="input-group mb-3 align-content-md-center">
-        <input type="text" class="form-control light " placeholder="Rechercher une salle : Dax, CGR, 64100,..."
-          aria-label="name" aria-describedby="basic-addon1">
-        <input type="text" class="form-control" placeholder="Connectez vous pour enregistrer vos films favoris">
+      <div class="d-flex justify-content-center">
+        <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+                height="230" id="box-shadow">
+            </div>
+            <div class="col-md-2">
+              <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+                height="230px" id="box-shadow">
+            </div>
+            <div class="col-md-2">
+              <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+                height="230px" id="box-shadow">
+            </div>
+            <div class="col-md-2">
+              <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+                height="230px" id="box-shadow">
+            </div>
+            <div class="col-md-2">
+              <img src="./assets/image/movie_theatre/Movies/Avenger3.jpg" class="rounded-5" alt="avengers3" width="170"
+                height="230px" id="box-shadow">
+            </div>
+            <div class="col-md-2"> <img src="./assets/image/movie_theatre/Movies/black_widow.jpg" class="rounded-5"
+                alt="black_widow" width="170" height="230px" id="box-shadow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col-md-2"><img src="assets/image/play.jpg" class="rounded-5" alt="play" width="35px"
+                height="35px"></div>
+            <div class="col-md-2"><img src="assets/image/play.jpg" class="rounded-5" alt="play" width="35px"
+                height="35px"></div>
+            <div class="col-md-2"><img src="assets/image/play.jpg" class="rounded-5" alt="play" width="35px"
+                height="35px"></div>
+            <div class="col-md-2"><img src="assets/image/play.jpg" class="rounded-5" alt="play" width="35px"
+                height="35px"></div>
+            <div class="col-md-2"><img src="assets/image/play.jpg" class="rounded-5" alt="play" width="35px"
+                height="35px"></div>
+            <div class="col-md-2"><img src="assets/image/play.jpg" class="rounded-5" alt="play" width="35px"
+                height="35px"></div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
 
-    <div class="black hashtag text-start gras" style="font-size: 14px;">
-      <div class="d-flex flex-row">
-        <p class="d-inline px-3 uppercase">SORTIE DE LA SEMAINE</p>
-        <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px"></div>
-        <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px"></div>
-        <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px"></div>
-        <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px"></div>
+  <section>
+    <div class="fluid-container col-12 col-lg-12">
+      <div class="col-12 col-lg-12">
+        <div>
+          <p class="h2 uppercase bold"> Actuellement en salles</p>
+          <div class="h3 uppercase bold">
+            <p class="d-inline px-3 "> <span style="color:#F4661B">#</span> Films Marvel</p>
+            <p class="d-inline px-3"> <span style="color:#F4661B;">#</span>Agenda des sorties</p>
+            <p class="d-inline px-3"> <span style="color:#F4661B;">#</span>Sorties ciné du mois</p>
+            <p class="d-inline px-3"> <span style="color:#F4661B;">#</span>Actus cinéma</p>
+            <p class="d-inline px-3"> <span style="color:#F4661B;">#</span>Box Office</p>
+          </div>
+
+          <!-- Terminer bloc recherche de salle, .... -->
+          <div class="d-flex justify-content-center">
+            <div class="input-group mb-3 align-content-md-center">
+              <input type="text" class="form-control light " placeholder="Rechercher une salle : Dax, CGR, 64100,..."
+                aria-label="name" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" placeholder="Connectez vous pour enregistrer vos films favoris">
+            </div>
+          </div>
+        </div>
       </div>
 
+      <div class="col-12 col-md-6">
+        <!-- <div>
+          <p class="h3 uppercase bold">SORTIE DE LA SEMAINE</p>
+        </div> -->
+        <div class="d-flex flex-row">
+          <div>
+            <p class="h3 uppercase bold">SORTIE DE LA SEMAINE</p>
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- mettre les 2 blocs sur la meme ligne -->
+
+      <div class="col-12 col-md-6">
+        <!-- <div>
+          <p class="h3 uppercase bold">TOUJOURS À L'AFFICHE</p>
+        </div> -->
+        <div class="d-flex flex-row-reverse">
+          <div>
+            <p class="h3 uppercase bold">TOUJOURS À L'AFFICHE</p>
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="black hashtag text-start gras">
+        <div class="d-flex flex-row">
+          <p class="d-inline px-3 uppercase">prochainement</p>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+        </div>
         <!-- mettre un espace entre ces 2 blocs -->
 
         <div class="d-flex flex-row-reverse ">
-          <p class="d-inline px-3 uppercase">TOUJOURS À L'AFFICHE</p>
-          <div class="p-2 "><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px"></div>
-          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px"></div>
-          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px"></div>
-          <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px"></div>
+          <p class="d-inline px-3 uppercase">LES PLUS ATTENDUS PAR LES FANS</p>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
+          </div>
         </div>
+      </div>
     </div>
-    
+  </section>
+
+  <section>
+    <div>
+      <p class="h2"> DVD & BLU-RAY</p>
       <div class="black hashtag text-start gras" style="font-size: 14px;">
-        <div class="d-flex flex-row">
-          <p class="d-inline px-3 uppercase">prochainement</p>
-          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px"></div>
-          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px"></div>
-          <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px"></div>
-          <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px"></div>
-        </div>
-          <!-- mettre un espace entre ces 2 blocs -->
+        <p class=" d-inline px-3 uppercase"> LES SORTIES DU MOMENT</p>
+        <div class="d-flex flex-row"">
+            <!-- <p class=" d-inline px-3 uppercase"> LES SORTIES DU MOMENT</p> -->
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
+          </div>
 
+
+          <p class="d-inline px-3 uppercase">POUR LES ENFANTS</p>
           <div class="d-flex flex-row-reverse ">
-            <p class="d-inline px-3 uppercase">LES PLUS ATTENDUS PAR LES FANS</p>
-            <div class="p-2 "><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px"></div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px"></div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px"></div>
-            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px"></div>
+
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
 
-
-
-      <div>
-        <p class="h2"> DVD & BLU-RAY</p>
-        <div class="black hashtag text-start gras" style="font-size: 14px;">
-          <div class="d-flex flex-row"">
-            <p class=" d-inline px-3 uppercase"> LES SORTIES DU MOMENT</p>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
-            </div>
-            <div class="d-flex flex-row-reverse ">
-              <p class="d-inline px-3 uppercase">POUR LES ENFANTS</p>
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
-            </div>
+  <section>
+    <div>
+      <p class="h2"> VOD</p>
+      <div class="black hashtag text-start gras" style="font-size: 14px;">
+        <div class="d-flex justify-content-center">
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
 
-      <div>
-        <p class="h2"> VOD</p>
-        <div class="black hashtag text-start gras" style="font-size: 14px;">
-          <div class="d-flex justify-content-center">
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
-            </div>
+  <section>
+    <div>
+      <p class="h2"> STREAMING</p>
+      <div class="black hashtag text-start gras" style="font-size: 14px;">
+        <div class="d-flex justify-content-between">
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+              height="230" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+              height="230px" id="box-shadow">
+          </div>
+          <div class="col-md-1">
+            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+              height="230px" id="box-shadow">
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div>
-        <p class="h2"> STREAMING</p>
-        <div class="black hashtag text-start gras" style="font-size: 14px;">
-          <div class="d-flex justify-content-between">
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/antman2.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"><img src="./assets/image/movie_theatre/Movies/cap_am1.jpg" alt="poster" height="230px">
-            </div>
-            <div class="p-2"> <img src="./assets/image/movie_theatre/Movies/avengers.jpg" alt="poster" height="230px">
-            </div>
-          </div>
-        </div>
+  <!-- fin du corps de la page -->
+
+  <!--Footer -->
+  <footer class="bg_grey">
+
+    <!-- Link Icons -->
+    <div class="text-center py-40">
+      <a href="#" target="_blank" rel="noopener noreferrer" class="d-inline"><img
+          src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
+      <a href="#" class="d-inline"><img src="./assets/image/contact/INSTAGRAM.png" alt="instagram" width="42px"
+          height="42px"></a>
+      <a href="#" class="d-inline"><img src="./assets/image/contact/FACEBOOK.png" alt="facebook" width="42px"
+          height="42px"></a>
+      <a href="#" class="d-inline"><img src="./assets/image/contact/MARKETPLACE.png" alt="marketplace" width="42px"
+          height="42px"></a>
+      <a href="#" class="d-inline"><img src="./assets/image/contact/PINTEREST.png" alt="pinterest" width="42px"
+          height="42px"></a>
+      <a href="#" class="d-inline"><img src="./assets/image/contact/TWITTER.png" alt="twitter" width="42px"
+          height="42px"></a>
+    </div>
+
+    <div class="text-center pb-40">
+      <div class="text-white text-uppercase link">
+        <a href="#">
+          <p class="d-inline px-3">newsletter</p>
+        </a>
+        <a href="contact.html">
+          <p class="d-inline px-3">contact</p>
+        </a>
+        <a href="#">
+          <p class="d-inline px-3">modération</p>
+        </a>
+        <a href="#">
+          <p class="d-inline px-3">mention légale</p>
+        </a>
+        <a href="#">
+          <p class="d-inline px-3">c.g.u cookies</p>
+        </a>
+        <a href="#">
+          <p class="d-inline px-3">politique de confidentialité</p>
+        </a>
       </div>
+    </div>
 
+  </footer>
 
+  <!-- fin du footer  -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!--Footer -->
-      <footer class="bg_grey">
-
-        <!-- Link Icons -->
-        <div class="text-center py-40">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="d-inline"><img
-              src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
-          <a href="#" class="d-inline"><img src="./assets/image/contact/INSTAGRAM.png" alt="instagram" width="42px"
-              height="42px"></a>
-          <a href="#" class="d-inline"><img src="./assets/image/contact/FACEBOOK.png" alt="facebook" width="42px"
-              height="42px"></a>
-          <a href="#" class="d-inline"><img src="./assets/image/contact/MARKETPLACE.png" alt="marketplace" width="42px"
-              height="42px"></a>
-          <a href="#" class="d-inline"><img src="./assets/image/contact/PINTEREST.png" alt="pinterest" width="42px"
-              height="42px"></a>
-          <a href="#" class="d-inline"><img src="./assets/image/contact/TWITTER.png" alt="twitter" width="42px"
-              height="42px"></a>
-        </div>
-
-        <div class="text-center pb-40">
-          <div class="text-white text-uppercase link">
-            <a href="#">
-              <p class="d-inline px-3">newsletter</p>
-            </a>
-            <a href="contact.html">
-              <p class="d-inline px-3">contact</p>
-            </a>
-            <a href="#">
-              <p class="d-inline px-3">modération</p>
-            </a>
-            <a href="#">
-              <p class="d-inline px-3">mention légale</p>
-            </a>
-            <a href="#">
-              <p class="d-inline px-3">c.g.u cookies</p>
-            </a>
-            <a href="#">
-              <p class="d-inline px-3">politique de confidentialité</p>
-            </a>
-          </div>
-        </div>
-
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  <!-- insertion de script dans la page  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
 
 </body>
 
